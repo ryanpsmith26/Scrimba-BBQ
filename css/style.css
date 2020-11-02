@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  color: #5A5A5A;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+/* Typography */
+/* ________________________________________________ */
+
+h1 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+h2 {
+  margin: 0;
+  color: #F18119;
+  text-transform: uppercase;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.banner-tag {
+  font-size: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.banner-headline {
+  font-weight: 400;
+  font-size: 2.125rem;
+  color: #fff;
+}
+
+.banner-join-us {
+  font-size: 1.375rem;
+}
+
+.form-headline {
+  font-size: 1.375rem;
+  color: #404040;
+}
+
+.form-register-today {
+  font-size: 1rem;
+}
+
+.disclaimer-text {
+  font-size: 0.75rem;
+  color: #989898;
+  letter-spacing: 1px;
+}
+
+
+/* Layout */
+/* ________________________________________________ */
+
+.banner-container > *,
+.form-container > * {
+  max-width: 450px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* banner section */
+/* _________________ */
+
+.banner-container {
+  background-image: url(../images/dark-ribs.jpg);
+  background-color: #707070;
+  background-size: cover;
+  background-position: center;
+  padding: 0 .5em 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
+}
+
+.banner-tag {
+  padding-top: 1.5px;
+  border-top: 5px solid #F18119;
+}
+
+.banner-headline {
+  /* margin: 0 1.25em 2em; */
+}
+
+/* form section */
+/* _________________ */
+
+.form-container {
+  margin: 0 auto;
+  padding: 2.5em;
+  width: 90%;
+}
+
+form {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+input,
+button {
+  text-align: inherit;
+  font-family: inherit;
+  border-radius: 7px;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+input {
+  font-size: inherit;
+  padding: 0.75em;
+  border: 1px solid #b5b5b5;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: #F18119;
+  color: #fff;
+  font-weight: 900;
+  border: 0;
+  padding: 1.4em;
+  background-image: linear-gradient(to right, #FFA51D, #DF4E13);
+  transition: transform 250ms;
+}
+
+button:hover,
+button:focus {
+  transform: scale(1.075)
+}
+
+/* media queries */
+/* ________________________________________________ */
+
+@media (min-width: 570px) {
+  body {
+    flex-direction: row;
+    font-size: 1.25rem;
+  }
+
+  .banner-container {
+    width: 60%;
+    min-height: 100vh;
+  }
+
+  .banner-headline {
+    font-size: 3.5rem;
+  }
+
+  .banner-join-us {
+    font-size: 2rem;
+  }
+
+  .form-container {
+    width: 40%;
+    min-height: 100vh;
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
